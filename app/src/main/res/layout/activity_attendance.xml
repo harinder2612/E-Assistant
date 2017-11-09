@@ -8,6 +8,24 @@
     tools:context="com.harinder.e_assistant.attendance"
     android:orientation="vertical">
 
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/classtitileBar"
+        android:background="@color/colorPrimary"
+        android:title="Attendance List of CSE-1"
+        android:titleTextColor="#ffffff"
+        android:navigationIcon="@drawable/backbutton">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/refresh"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/refresh"/>
+    </Toolbar>
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="0dp"

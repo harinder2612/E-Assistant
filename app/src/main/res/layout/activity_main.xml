@@ -86,7 +86,10 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.33"
-                android:orientation="vertical">
+                android:id="@+id/schedule"
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -117,7 +120,9 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.33"
                 android:orientation="vertical"
-                android:id="@+id/attendance">
+                android:id="@+id/attendance"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -147,7 +152,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.33"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -192,7 +199,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.33"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -218,7 +227,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.33"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -249,7 +260,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.33"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true">
 
                 <ImageView
                     android:layout_width="match_parent"

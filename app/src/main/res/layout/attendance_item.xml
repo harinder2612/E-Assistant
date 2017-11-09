@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="3dp"
+        android:src="@drawable/user"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/studname"
+        android:layout_height="match_parent"
+        android:text="Harinder Pal Singh"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:textSize="22sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:id="@+id/state"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="16dp"
+        android:background="@drawable/greendot"/>
+
+
+</LinearLayout>

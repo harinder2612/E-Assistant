@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".schedule" />
         <activity android:name=".attendance" />
+        <activity android:name=".profile" />
+        <activity android:name=".database"></activity>
     </application>
 
 </manifest>

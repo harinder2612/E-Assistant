@@ -13,7 +13,7 @@
         android:layout_height="60dp"
         android:id="@+id/classtitileBar"
         android:background="@color/colorPrimary"
-        android:title="Attendance List of CSE-1"
+        android:title="Attendance"
         android:titleTextColor="#ffffff"
         android:navigationIcon="@drawable/backbutton">
 
@@ -21,9 +21,20 @@
             android:layout_width="26dp"
             android:layout_height="26dp"
             android:src="@drawable/refresh"
-            android:background="@android:color/transparent"
-            android:layout_marginLeft="20dp"
-            android:id="@+id/refresh"/>
+            android:layout_marginLeft="120dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/refresh"
+            />
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/savee"
+            android:layout_marginLeft="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/save"/>
     </Toolbar>
 
     <ListView

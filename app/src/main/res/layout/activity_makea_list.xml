@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.harinder.e_assistant.makeaList">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/attnRecordsBar"
+        android:background="@color/colorPrimary"
+        android:title="Make A List"
+        android:titleTextColor="#ffffff"
+        android:navigationIcon="@drawable/backbutton">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/refresh"
+            android:layout_marginLeft="155dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:id="@+id/getdata"
+            />
+        </Toolbar>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="Network"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="Science"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text="Wireless"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Harinder"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/a"/>
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/b"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/c"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Amanjeet"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/d"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/e"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/f"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Prabhnoor"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/g"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/h"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="18sp"
+                android:id="@+id/i"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Rupinder"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/j"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:textSize="18sp"
+                android:gravity="center"
+                android:id="@+id/k"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:text=""
+                android:id="@+id/l"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

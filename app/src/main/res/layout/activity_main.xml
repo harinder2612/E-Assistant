@@ -157,6 +157,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.33"
+                android:id="@+id/lists"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:orientation="vertical">
@@ -169,7 +170,7 @@
                     android:paddingLeft="6dp"
                     android:paddingRight="6dp"
                     android:paddingTop="66dp"
-                    android:src="@drawable/lists" />
+                    android:src="@drawable/addlist" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -201,6 +202,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.33"
+                android:id="@+id/announce"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:orientation="vertical">
@@ -239,10 +241,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:padding="20dp"
-                    android:paddingLeft="14dp"
-                    android:paddingRight="14dp"
-                    android:src="@drawable/databasee" />
+                    android:padding="27dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:src="@drawable/databse" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -267,21 +269,22 @@
                 android:layout_weight="0.33"
                 android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
+                android:id="@+id/records"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:padding="16dp"
-                    android:src="@drawable/reminder" />
+                    android:padding="13dp"
+                    android:src="@drawable/listse" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="0.3"
                     android:gravity="center_horizontal"
-                    android:text="Reminders"
+                    android:text="Records"
                     android:textSize="20sp" />
 
             </LinearLayout>
@@ -300,7 +303,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.4"
             android:gravity="center"
-            android:text="105/E"
+            android:text="034"
             android:textSize="18sp" />
 
         <TextView
@@ -309,7 +312,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Cloud Computing"
+            android:text="Software"
             android:textSize="18sp" />
 
         <TextView
@@ -317,7 +320,7 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5"
             android:gravity="center"
-            android:text="10:30 AM"
+            android:text="02:00 PM"
             android:textSize="18sp" />
 
     </LinearLayout>

@@ -1,6 +1,7 @@
 package com.harinder.e_assistant;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,7 +16,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends AppCompatActivity {
 
-    View attn,schedule,database;
+    View attn,schedule,database,announce,lists,records;
     TextView subject;
     de.hdodenhof.circleimageview.CircleImageView profile;
     @Override
@@ -27,6 +28,10 @@ public class MainActivity extends AppCompatActivity {
         subject= (TextView) findViewById(R.id.subject);
         profile= (CircleImageView) findViewById(R.id.profile);
         database=findViewById(R.id.database);
+        lists=findViewById(R.id.lists);
+        announce= findViewById(R.id.announce);
+        records=findViewById(R.id.records);
+
 
         SimpleDateFormat formatter1 = new SimpleDateFormat("hh:mm a");
         long time=System.currentTimeMillis();
@@ -56,10 +61,10 @@ public class MainActivity extends AppCompatActivity {
         Calendar cal2= Calendar.getInstance();
         cal2.setTime(date2);
 
-        if(cal1.before(cal2))
-        {subject.setText(dateString);}
-        else
-        {subject.setText(argDate);}
+//        if(cal1.before(cal2))
+//        {subject.setText(dateString);}
+//        else
+//        {subject.setText(argDate);}
 
         final Intent[] intent = new Intent[1];
         attn.setOnClickListener(new View.OnClickListener() {
@@ -89,9 +94,34 @@ public class MainActivity extends AppCompatActivity {
         database.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                intent[0] =new Intent(MainActivity.this, com.harinder.e_assistant.database.class);
+                intent[0] =new Intent(MainActivity.this,database.class);
                 startActivity(intent[0]);
             }
         });
+
+        announce.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent[0] =new Intent(MainActivity.this,announcement.class);
+                startActivity(intent[0]);
+            }
+        });
+
+        lists.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent[0] =new Intent(MainActivity.this,makeaList.class);
+                startActivity(intent[0]);
+            }
+        });
+
+        records.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent[0] =new Intent(MainActivity.this,records.class);
+                startActivity(intent[0]);
+            }
+        });
+
     }
 }

@@ -4,8 +4,10 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@drawable/alexa"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -19,7 +21,11 @@
         <activity android:name=".schedule" />
         <activity android:name=".attendance" />
         <activity android:name=".profile" />
-        <activity android:name=".database"></activity>
+        <activity android:name=".database" />
+        <activity android:name=".oldAttendance" />
+        <activity android:name=".announcement" />
+        <activity android:name=".makeaList" />
+        <activity android:name=".records"></activity>
     </application>
 
 </manifest>

@@ -1,13 +1,11 @@
 package com.harinder.e_assistant;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.google.firebase.database.ChildEventListener;
@@ -15,21 +13,20 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.Map;
 
-public class database extends AppCompatActivity {
+public class records extends AppCompatActivity {
 
-    ListView attnLists;
+    ListView listLists;
     DatabaseReference myref= FirebaseDatabase.getInstance().getReferenceFromUrl("https://calci-b1a59.firebaseio.com/");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_database);
-        attnLists= (ListView) findViewById(R.id.attnLists);
+        setContentView(R.layout.lists_records);
+        listLists= (ListView) findViewById(R.id.listLists);
 
         final ProgressDialog pd=new ProgressDialog(this);
         pd.setTitle("Loading...");
@@ -38,10 +35,10 @@ public class database extends AppCompatActivity {
         final ArrayList<String> listOfRecords= new ArrayList<>();
 
         final ArrayAdapter<String> adapter= new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,listOfRecords);
-        attnLists.setAdapter(adapter);
+        listLists.setAdapter(adapter);
 
 
-        myref.child("attendance_records").child("attn_lists").addChildEventListener(new ChildEventListener() {
+        myref.child("records").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 pd.dismiss();
@@ -71,16 +68,12 @@ public class database extends AppCompatActivity {
             }
         });
 
-       attnLists.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-           @Override
-           public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-               Intent intent= new Intent(database.this,oldAttendance.class);
-               intent.putExtra("le_chak",listOfRecords.get(i));
-               intent.putExtra("total",listOfRecords.size());
-               startActivity(intent);
-           }
-       });
-
+        listLists.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                setContentView(R.layout.activity_records);
+            }
+        });
 
     }
 }
